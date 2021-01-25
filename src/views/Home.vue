@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <div class="icon-add"></div>
-    <span>hello world</span>
+    
   </div>
 </template>
 
