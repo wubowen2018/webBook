@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    111
+    <div class="icon-add"></div>
+    <span>hello world</span>
   </div>
 </template>
 
@@ -14,3 +15,8 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+
+</style>
