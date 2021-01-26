@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import './components/element-ui'
 
 import './assets/styles/icon.css'
 import './assets/styles/global.scss'
