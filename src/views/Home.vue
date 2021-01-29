@@ -1,18 +1,15 @@
 <template>
   <div class="home">
     <div class="ebook" @click="handleClick('/ebook')">ebook</div>
-    <div class="mangda" @click="handleClick('/mangda')">盲打</div>
+    <div class="mangda" @click="handleClick('/mangDaSetting')">盲打</div>
   </div>
 </template>
 
 <script>
 
-
 export default {
   name: 'Home',
-  components: {
-    
-  },
+  components: {},
   methods:{
     handleClick(path){
       this.$router.push(path)

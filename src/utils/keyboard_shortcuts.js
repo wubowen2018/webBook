@@ -8,7 +8,7 @@ function shortcut(shortcut, callback, opt) {
     //Provide a set of default options
     var default_options = {
         'type': 'keydown',
-        'propagate': false,
+        'propagate': false, 
         'target': document
     }
     if (!opt) opt = default_options;

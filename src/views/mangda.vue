@@ -42,7 +42,9 @@ export default {
     };
   },
   computed: {},
-  mounted() {},
+  mounted() {
+      
+  },
   beforeDestroy() {},
   methods: {
     start(){

@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    redirect: '/mangda',
+    // redirect: '/mangda',
     component: Home
   },
   {
@@ -20,6 +20,11 @@ const routes = [
     path: '/mangda',
     name: 'mangda',
     component: () => import('../views/mangda.vue')
+  },
+  {
+    path: '/mangDaSetting',
+    name: 'mangDaSetting',
+    component: () => import('../views/mangDaSetting.vue')
   }
 ]
 
