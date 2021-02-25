@@ -20,13 +20,14 @@ function shortcut(shortcut, callback, opt) {
 
     var ele = opt.target
     if (typeof opt.target == 'string') ele = document.getElementById(opt.target);
-    var ths = this;
+    // var ths = this;
 
     //The function to be called at keypress
     var func = function (e) {
         e = e || window.event;
 
         //Find Which key is pressed
+        var code ="";
         if (e.keyCode) code = e.keyCode;
         else if (e.which) code = e.which;
         var character = String.fromCharCode(code).toLowerCase();
@@ -112,8 +113,8 @@ function shortcut(shortcut, callback, opt) {
             'f12': 123
         }
 
-
-        for (var i = 0; k = keys[i], i < keys.length; i++) {
+        var k;
+        for (var i = 0;k = keys[i], i < keys.length; i++) {
             //Modifiers
             if (k == 'ctrl' || k == 'control') {
                 if (e.ctrlKey) kp++;
